@@ -25,7 +25,7 @@ SECRET_KEY = ')mi^7es9lsbfe-737kpe78t*0(wr0cg_%36drmajf@05uk)+^p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'adventurerunner.herokuapp.com']
 
 
 # Application definition
