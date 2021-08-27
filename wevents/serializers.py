@@ -18,3 +18,7 @@ class ChallengeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Challenge
         fields= ('name',)
+# class leaderboardSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = leaderboard
+#         fields= ('user_name', 'distance')

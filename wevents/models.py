@@ -26,3 +26,6 @@ class WeeklyEvents(models.Model):
     # def __str__(self):
     #     return self.reward
 
+# class leaderboard(models.Model):
+#     user_name = models.CharField(max_length = 30, unique=True)
+#     distance = models.IntegerField()

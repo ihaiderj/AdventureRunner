@@ -13,21 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import include, path
-from rest_framework import routers
-from . import views 
+from django.conf.urls import url
+from .views import UpdateLeaderboard, Leaderboard
 
-
-from rest_framework import routers
-
-router= routers.DefaultRouter()
-router.register('WeeklyEvents', views.WeeklyEventsViewSet)
-router.register('Tier', views.TierViewSet)
-router.register('Challenge', views.ChallengeViewSet)
-# router.register('leaderboard', views.leaderboardViewSet)
-
-urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+urlpatterns = [    
+    url('update/',UpdateLeaderboard.as_view()),
+    url('update1/',Leaderboard.as_view())
+    
 ]
- 
